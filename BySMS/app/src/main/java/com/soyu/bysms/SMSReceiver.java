@@ -59,6 +59,9 @@ public class SMSReceiver extends BroadcastReceiver {
 
                     if (origNumber.equals(c.getString(1))) {
                         //  SMS Send
+                        Log.e("!!!", "SMS Send origNumber = " + origNumber);
+                        Log.e("!!!", "SMS Send c.getString(1) = " + c.getString(1));
+                        Log.e("!!!", "SMS Send c.getString(2) = " + c.getString(2));
                         sendSMS(c.getString(2), message);
                     }
 

@@ -58,7 +58,7 @@ public class SQLHelper extends SQLiteOpenHelper {
         return result;
     }
 
-    // 데이터 추
+    // 데이터 추가
     public void insertData(SQLiteDatabase sqLiteDatabase, String recv, String send) {
         String sql = "insert into number values(NULL, '"
                 + recv + "', '" + send + "');";
